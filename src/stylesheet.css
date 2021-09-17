@@ -1,0 +1,164 @@
+.certImage{
+    width:55vh
+}
+@import "react-alice-carousel/lib/alice-carousel.css";
+.alice-carousel__prev-btn-item {
+  display: inline-block;
+  padding: 5.5px 16px;
+  background-color: #f1f1f1;
+  color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  left: 50vh;
+}
+.alice-carousel__next-btn-item {
+  display: inline-block;
+  padding: 5.5px 16px;
+  background-color: #f1f1f1;
+  color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  right:50vh;
+}
+
+.carousel {
+  --current-slide: 0;
+  /* we set position relative so absolute position works properly for the buttons */
+  overflow: hidden;
+  display: inline-block;
+  /* width: 160px; */
+}
+
+.carousel-button:hover {
+  background-color: rgba(89, 0, 255, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-button {
+    font-size: 2rem;
+  }
+}
+
+
+.alice-carousel__dots {
+  display: none;
+}
+
+.Main{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #697077;
+}
+
+.Header{
+    min-height:10vh;
+    background-color: #001141;
+    display:flex;
+    justify-content: left;
+    color:white;
+    text-align: center;
+    vertical-align: center;
+    align-items: center;
+    
+}
+.Header p {
+  margin-left:5vh;
+  font-size: 4vh;
+}
+
+.Footer{
+    min-height:10vh;    
+    min-height:10vh;
+    background-color: #161616;
+    display:flex;
+    flex-direction: row;
+    color:white;
+    vertical-align: center;
+    padding: 6vh;
+    font-size: 3.5vh;
+}
+
+h1{
+  margin-bottom: 3vh;
+}
+
+
+.FooterLeftContainer{
+  display:flex;
+  flex-direction: row;
+  justify-content: left;
+  vertical-align: middle;
+  text-align: middle;
+  align-items: center;
+  width:50%
+}
+
+.FooterRightContainer{
+  display:flex;
+  flex-direction:row-reverse;
+  justify-content: right;
+  right:0;
+  vertical-align: middle;
+  text-align: middle;
+  align-items: center;
+  width:50%;
+}
+
+.footerCompanieslogo{
+  width:18vh;
+  height:7.4vh;
+  margin: 2vh;
+}
+
+.footerContactlogo{
+  width:7vh;
+  height:7vh;
+  margin: 1vh;
+}
+
+.mainImage{
+  width:40vh
+}
+
+.buttonsBox{
+  display: flex;
+  flex-direction: row;
+  margin:4vh;
+}
+
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerContainer{
+  display:flex;
+  flex-direction: row;
+}
+
+.homeLogo{
+  margin-left: 1.2vh;
+  width:4.2vh
+}
+
+.mainButton{
+  animation-name : mymove;
+  animation-iteration-count : infinite;
+  animation-direction : alternate;
+  animation-duration : 2s;
+}
+
+@keyframes mymove {
+  from {transform: translateY(0px);}
+  to {transform: translateY(20px);}
+}
