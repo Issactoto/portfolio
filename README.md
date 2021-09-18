@@ -6,6 +6,9 @@ My certificates
 * React
 * Oracle
 
+## Features
+* My certifcates
+* All content can be modified on Prismic CMS
 
 ## Deploy (after build)
 * Change file address (static/css/ or static/js/)
