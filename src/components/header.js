@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import {useHistory} from "react-router-dom";
 import Prismic from '@prismicio/client';
 import { Date, Link, RichText, Group } from 'prismic-reactjs';
-import { AwesomeButton } from "react-awesome-button";
-import styles from 'react-awesome-button/src/styles/themes/theme-indigo';
 
 import '../stylesheet.css';
 import {apiEndpoint,accessToken} from '../key';

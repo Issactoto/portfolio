@@ -40,7 +40,7 @@ function App(){
                 doc ? 
                 <div className='Footer'>
                 <div className='FooterLeftContainer'>
-                    <p>Powered by:</p>
+                    <p >Powered by:</p>
                     <img src={doc.data.prismic.url} className="footerCompanieslogo"/>
                     <img src={doc.data.oracle.url} className="footerCompanieslogo"/>
                 </div>

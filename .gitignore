@@ -7,7 +7,7 @@
 ./src/key.js
 # testing
 /coverage
-
+/notes
 # production
 /build
 

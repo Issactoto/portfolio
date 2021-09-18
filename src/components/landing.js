@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Prismic from '@prismicio/client';
 import {useHistory} from "react-router-dom";
 import { Date, Link, RichText, Group } from 'prismic-reactjs';
-import { AwesomeButton } from "react-awesome-button";
-import styles from 'react-awesome-button/src/styles/themes/theme-indigo';
 
 import '../stylesheet.css';
 import {apiEndpoint,accessToken} from '../key';
@@ -35,30 +33,23 @@ function App(){
                 <div className = "mainContainer">
                     <img src={doc.data.certificate.url} className="mainImage"/>
                     <div className="buttonsBox">
-                        <AwesomeButton 
-                            cssModule={styles} 
-                            type="primary" 
-                            button-primary-color-hover="yellow"
-                            onPress={() => {
+                        <button 
+                            onClick={() => {
                                 history.push('/cert')
                               }}
-                            size = 'large'
                             className="mainButton"
                         >
                             {RichText.asText(doc.data.certbutton)}
-                        </AwesomeButton>
+                        </button>
                         <p style={{margin:'5vh'}}>{' '}</p>
-                        <AwesomeButton 
-                            cssModule={styles} 
-                            type="primary" 
-                            onPress={() => {
+                        <button  
+                            onClick={() => {
                                 history.push('/badge')
                             }}
-                            size = 'large'
                             className="mainButton"
                         >
                             {RichText.asText(doc.data.badgebutton)}
-                        </AwesomeButton>
+                        </button>
                     </div>
                 </div>
                 :<p>Loading...</p>

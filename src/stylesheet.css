@@ -156,6 +156,16 @@ h1{
   animation-iteration-count : infinite;
   animation-direction : alternate;
   animation-duration : 2s;
+  background-color: black;
+  color: white;
+  font-size: 3vh;
+  padding: 3vh 3vh;
+  border-radius: 5px;
+  border: 1px solid white;
+  min-width:15vh;
+  background-color: #001141;
+
+  cursor: pointer;
 }
 
 @keyframes mymove {
